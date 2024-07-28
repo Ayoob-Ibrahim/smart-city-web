@@ -1,0 +1,42 @@
+.street-light-conatiner {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+     color: rgba(0, 0, 0, 0.492);
+
+    h4 {
+        margin-bottom: 0;
+    }
+
+
+
+    .light-title {
+        font-size: 11px;
+        font-weight: 500;
+        margin-left: 4px;
+    }
+
+    small {
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    .row-alter {
+        width: 90%;
+        font-size: 12px;
+        font-weight: 500;
+        margin-left: 25%;
+        margin-top: -3%;
+    }
+
+    .end-btn {
+        position: absolute;
+        right: -4%;
+        // bottom: 1px;
+
+        .btn-over {
+            color: #5e51b5;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+<ng-container *ngIf="binData.iscard;else binDetails">
+    <div class="dust-bin-conatiner">
+        <div class="row">
+            <i class="bi bi-trash3-fill scw-icon-m scw-primary-color col-2"></i>
+            <div class="col-4">
+                <h4>21</h4>
+                <p class="light-title">Smart Bins</p>
+            </div>
+            <div class="col-6">
+                <div>
+                  <h6 class="d-block small mb-0">3</h6>
+                  <small class="d-inline ms-1">Trash level->73%</small>
+                </div>
+                <div>
+                  <h6 class="d-block small ">142</h6>
+                  <small class="d-inline ms-1">Trash level->45%</small>
+                </div>
+              </div>
+          
+        </div>
+        <!-- <div class="end-btn">
+            <button type="button" style="font-size: 0.8rem;" class="btn btn-over">Read more <i
+                class="bi bi-box-arrow-up-right"></i></button>
+          </div> -->
+    </div>
+</ng-container>
+<ng-template #binDetails>
+    full details
+</ng-template>

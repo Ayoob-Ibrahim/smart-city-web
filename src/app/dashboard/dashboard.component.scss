@@ -1,0 +1,164 @@
+ .side-content {
+     width: 19vw;
+     height: 86vh;
+
+ }
+
+ .container-fluid {
+     background-color: grey;
+ }
+
+ .wrapper {
+     height: 86vh;
+     width: 72vw;
+     background-color: grey;
+     color: #444;
+
+     .square {
+         width: 70%;
+         height: 100%;
+
+         .top-cards {
+             height: 25%;
+
+             .row> :first-child {
+                 padding-right: 0 !important;
+             }
+
+             .row> :nth-child(2) {
+                 margin-left: -.5%;
+             }
+
+             .card {
+                 border-radius: 0.3rem;
+
+                 .card-body {
+                     height: 20vh;
+                     padding: 10px 4px 0px 10px !important;
+                 }
+             }
+
+         }
+
+         .center-cards {
+             height: 42%;
+
+             .row> :first-child {
+                 padding-right: 0 !important;
+             }
+
+             .row> :nth-child(2) {
+                 margin-left: -.5%;
+             }
+
+             .card {
+                 border-radius: 0.3rem;
+
+                 .card-body {
+                     height: 35vh;
+                     padding: 5px !important;
+                 }
+             }
+         }
+
+         .bottom-cards {
+
+
+             .bottom-card-parent {
+                 width: 100%;
+
+                 .col-4 {
+                     width: 36%;
+                     margin-left: .7%;
+                 }
+
+                 .card {
+                     border-radius: 0.3rem;
+                     margin-left: 1.5%;
+                     margin-top: .5%;
+
+                     .card-body {
+                         height: 26vh;
+
+                     }
+                 }
+
+
+                 .bottom-inner-two-cards {
+                     margin-top: 1%;
+
+                     .card {
+                         border-radius: 0.3rem;
+                         margin-left: 2%;
+                         margin-top: .5%;
+
+                         .card-body {
+                             height: 12.5vh;
+                             padding: 2%;
+                         }
+                     }
+
+                 }
+
+                 .bottom-inner-two-cards> :nth-child(2) {
+                     margin-top: 3%;
+                 }
+
+             }
+         }
+     }
+
+
+
+     .inverse-rectangle {
+         height: 100%;
+         width: 26%;
+         height: 100%;
+
+
+
+
+         .invers-parent {
+
+
+
+             .card {
+                 border-radius: 0.3rem;
+
+                 .card-body {
+                     height: 30vh;
+                     margin: 10px 0px !important;
+                 }
+
+
+             }
+
+             .card-second {
+                 margin-top: 2%;
+
+                 .card-bottom-un {
+                     height: 47vh;
+                     padding: 0;
+                 }
+             }
+
+
+             .chart-container {
+                color: rgba(0, 0, 0, 0.492);
+                .header--{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .bi {
+                        font-size: 25px;
+                        color: #5e51b5;
+                    }
+                }
+                
+                
+             }
+         }
+
+
+     }
+ }

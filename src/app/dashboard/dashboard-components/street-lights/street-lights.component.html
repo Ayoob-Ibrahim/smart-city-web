@@ -1,0 +1,40 @@
+<ng-container *ngIf="strLights.iscard;else binDetails">
+  <div class="street-light-conatiner">
+    <div class="row">
+      <img class="scw-img-s col-3" src="../../../../assets/icons/icons8-street-light-64.png" alt="">
+      <div class="col-4">
+        <h4>1128</h4>
+        <p class="light-title">Total lights</p>
+      </div>
+      <div class="col-5">
+        <div>
+          <h6 class="d-inline">986</h6>
+          <small class="d-inline ms-1">Function</small>
+        </div>
+        <div>
+          <h6 class="d-inline">142</h6>
+          <small class="d-inline ms-1">NotFunction</small>
+        </div>
+      </div>
+    </div>
+    <div class="row row-alter">
+      <div class="col-4">
+        <i class="bi bi-brightness-high "></i>
+        <span class="ms-2">6:30</span>
+      </div>
+      <div class="col-5">
+        <i class="bi bi-brightness-high"></i>
+        <span class="ms-2">7:30</span>
+      </div>
+    </div>
+    <!-- <div class="end-btn">
+      <button type="button" style="font-size: 0.8rem;" class="btn btn-over">Read more <i
+          class="bi bi-box-arrow-up-right"></i></button>
+    </div> -->
+  </div>
+</ng-container>
+
+
+<ng-template #binDetails>
+  full details
+</ng-template>

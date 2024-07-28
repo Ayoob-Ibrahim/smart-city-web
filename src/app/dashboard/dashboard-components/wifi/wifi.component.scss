@@ -1,0 +1,32 @@
+.wifi-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: rgba(0, 0, 0, 0.492);
+
+    .bi {
+        color: #3f51b6;
+        font-size: 24px;
+    }
+
+    .light-title {
+        font-size: 9px;
+        font-weight: 500;
+    }
+
+    h5 {
+        margin-bottom: 0;
+        margin-left: 2%;
+    }
+
+    small {
+        font-size: 8px;
+        font-weight: 500;
+        margin-left: 0;
+    }
+
+    h6 {
+        margin-bottom: -13% !important;
+        margin-left: 5px;
+    }
+}

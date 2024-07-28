@@ -1,0 +1,173 @@
+<div class="containter-fluid">
+    <div [ngSwitch]="selected_svg">
+        <ng-container *ngSwitchCase="'leaf_svg'">
+            <ng-container *ngTemplateOutlet="leaf_svg"> </ng-container>
+        </ng-container>
+        <ng-container *ngSwitchCase="'thermo_svg'">
+            <ng-container *ngTemplateOutlet="thermo_svg"> </ng-container>
+        </ng-container>
+        <ng-container *ngSwitchCase="'volume_svg'">
+            <ng-container *ngTemplateOutlet="volume_svg"> </ng-container>
+        </ng-container>
+        <ng-container *ngSwitchCase="'drop_svg'">
+            <ng-container *ngTemplateOutlet="drop_svg"> </ng-container>
+        </ng-container>
+        <ng-container *ngSwitchCase="'cloud_svg'">
+            <ng-container *ngTemplateOutlet="cloud_svg"> </ng-container>
+        </ng-container>
+        <ng-container *ngSwitchCase="'molecule_svg'">
+            <ng-container *ngTemplateOutlet="molecule_svg"> </ng-container>
+        </ng-container>
+        <ng-container *ngSwitchCase="'bulb_svg'">
+            <ng-container *ngTemplateOutlet="bulb_svg"> </ng-container>
+        </ng-container>
+
+    </div>
+</div>
+
+ 
+
+
+
+<ng-template #leaf_svg>
+    <svg width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#5e51b5">
+
+        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+        <g id="SVGRepo_iconCarrier">
+            <path
+                d="M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20C19,20,22,3,22,3,21,5,14,5.25,9,6.25S2,11.5,2,13.5a6.22,6.22,0,0,0,1.75,3.75C7,8,17,8,17,8Z" />
+            <rect width="24" height="24" fill="none" />
+        </g>
+
+    </svg>
+</ng-template>
+
+<ng-template #thermo_svg>
+    <svg fill="#5e51b5" width="30px" height="30px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+        <g id="SVGRepo_iconCarrier">
+            <title>thermometer</title>
+            <path
+                d="M18.959 17.913v-0.917h3.063v0.917h-3.063zM18.959 14.975h3.063v0.979h-3.063v-0.979zM18.959 13.015h3.063v0.98h-3.063v-0.98zM18.959 10.993h3.063v0.979l-3.063-0.062v-0.917zM18.959 8.909h3.063v1.042h-3.063v-1.042zM18.959 6.95h3.063v0.98h-3.063v-0.98zM20.733 24.153c0 3.246-2.632 5.878-5.878 5.878s-5.878-2.632-5.878-5.878c0-2.226 1.175-4.161 2.999-5.159v-13.087c0-1.623 1.378-2.938 3.001-2.938s2.939 1.315 2.939 2.938v13.235c1.688 1.034 2.817 2.888 2.817 5.011zM16.937 19.735v-13.828c0-1.082-0.877-1.959-1.959-1.959s-1.959 0.877-1.959 1.959v13.711c-1.794 0.728-3.062 2.48-3.062 4.535 0 2.705 2.193 4.898 4.898 4.898s4.897-2.193 4.897-4.898c0.001-1.958-1.155-3.633-2.815-4.418zM14.855 28.072c-2.165 0-3.919-1.755-3.919-3.919 0-1.869 1.311-3.426 3.062-3.818v-9.342h1.96v9.418c1.623 0.479 2.816 1.964 2.816 3.742 0 2.164-1.754 3.919-3.919 3.919z" />
+        </g>
+
+    </svg>
+</ng-template>
+
+
+<ng-template #volume_svg>
+    <svg width="22px" height="22px" viewBox="0 -1.5 31 31" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+        fill="#5e51b5">
+
+        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+        <g id="SVGRepo_iconCarrier">
+            <title>volume-full</title>
+            <desc>Created with Sketch Beta.</desc>
+            <defs> </defs>
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-258.000000, -571.000000)"
+                    fill="#5e51b5">
+                    <path
+                        d="M277,571.015 L277,573.068 C282.872,574.199 287,578.988 287,585 C287,590.978 283,595.609 277,596.932 L277,598.986 C283.776,597.994 289,592.143 289,585 C289,577.857 283.776,572.006 277,571.015 L277,571.015 Z M272,573 L265,577.667 L265,592.333 L272,597 C273.104,597 274,596.104 274,595 L274,575 C274,573.896 273.104,573 272,573 L272,573 Z M283,585 C283,581.477 280.388,578.59 277,578.101 L277,580.101 C279.282,580.564 281,582.581 281,585 C281,587.419 279.282,589.436 277,589.899 L277,591.899 C280.388,591.41 283,588.523 283,585 L283,585 Z M258,581 L258,589 C258,590.104 258.896,591 260,591 L263,591 L263,579 L260,579 C258.896,579 258,579.896 258,581 L258,581 Z"
+                        id="volume-full" sketch:type="MSShapeGroup"> </path>
+                </g>
+            </g>
+        </g>
+
+    </svg>
+</ng-template>
+
+
+<ng-template #drop_svg>
+    <svg width="22px" height="22px" viewBox="-1.5 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" fill="#5e51b5">
+
+        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+        <g id="SVGRepo_iconCarrier">
+            <title>drop [#74]</title>
+            <desc>Created with Sketch.</desc>
+            <defs> </defs>
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Dribbble-Light-Preview" transform="translate(-224.000000, -7882.000000)" fill="#5e51b5">
+                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                        <path
+                            d="M180,7731 C180,7734.314 177.314,7737 174,7737 C170.686,7737 168,7734.314 168,7731 C168,7727.686 172.5,7722 174,7722 C175.5,7722 180,7727.686 180,7731"
+                            id="drop-[#74]"> </path>
+                    </g>
+                </g>
+            </g>
+        </g>
+
+    </svg>
+</ng-template>
+
+
+<ng-template #cloud_svg>
+    <svg width="26px" height="26px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+        <g id="SVGRepo_iconCarrier">
+            <path
+                d="M16.2857 20C19.4416 20 22 17.4717 22 14.3529C22 11.8811 20.393 9.78024 18.1551 9.01498C17.8371 6.19371 15.4159 4 12.4762 4C9.32028 4 6.7619 6.52827 6.7619 9.64706C6.7619 10.3369 6.88706 10.9978 7.11616 11.6089C6.8475 11.5567 6.56983 11.5294 6.28571 11.5294C3.91878 11.5294 2 13.4256 2 15.7647C2 18.1038 3.91878 20 6.28571 20H16.2857Z"
+                fill="#5e51b5" />
+            <path
+                d="M9.9395 2.9549C9.11445 2.35431 8.0986 2 7 2C4.23858 2 2 4.23858 2 7C2 8.45451 2.62107 9.76396 3.61248 10.6776C4.12743 10.4112 4.68736 10.2195 5.27727 10.1165C5.26708 9.9612 5.2619 9.80468 5.2619 9.64706C5.2619 6.57385 7.21349 3.96993 9.9395 2.9549Z"
+                fill="#5e51b5" />
+        </g>
+
+    </svg>
+</ng-template>
+
+
+<ng-template #molecule_svg>
+    <svg fill="#5e51b5" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" width="27px" height="27px" viewBox="0 0 477.71 477.71"
+        xml:space="preserve">
+
+        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+        <g id="SVGRepo_iconCarrier">
+            <g>
+                <path
+                    d="M419.953,152.332c-28.059,0-51.426,20.024-56.633,46.569l-59.083-1.39c-3.787-63.273-56.279-113.423-120.499-113.423 c-26.673,0-51.316,8.667-71.298,23.316l-10.018-11.683c8.164-9.957,13.072-22.692,13.072-36.573 c0-31.891-25.858-57.743-57.753-57.748C25.853,1.401,0,27.253,0,59.149c0,31.894,25.847,57.746,57.741,57.746 c10.905,0,21.063-3.075,29.764-8.326l10.062,11.727c-21.372,21.788-34.568,51.612-34.568,84.54 c0,55.347,37.257,101.969,88.055,116.223l-12.959,42.419c-5.487-1.722-11.309-2.665-17.355-2.665 c-31.893,0-57.748,25.857-57.748,57.752c0,31.891,25.849,57.74,57.748,57.745c31.888,0,57.749-25.854,57.749-57.745 c0-18.676-8.907-35.229-22.653-45.79l14.65-47.946c4.351,0.481,8.764,0.745,13.248,0.745c62.507,0,113.926-47.513,120.116-108.384 l59.056,1.39c4.124,27.848,28.058,49.237,57.049,49.237c31.902,0,57.757-25.847,57.757-57.74 C477.71,178.179,451.855,152.332,419.953,152.332z M120.745,463.434c-24.745,0-44.876-20.137-44.876-44.882 c0-2.603,2.106-4.703,4.706-4.703c2.599,0,4.707,2.101,4.707,4.703c0,19.558,15.91,35.459,35.463,35.459 c2.6,0,4.708,2.112,4.715,4.712C125.46,461.33,123.345,463.434,120.745,463.434z M53.04,18.982c0-2.599,2.108-4.711,4.708-4.711 c24.745,0.005,44.877,20.139,44.877,44.878c0,2.605-2.107,4.711-4.707,4.711c-2.602,0-4.708-2.106-4.708-4.711 c0-19.552-15.908-35.458-35.462-35.458C55.147,23.691,53.04,21.584,53.04,18.982z M109.59,204.828c0,5.442-4.405,9.847-9.841,9.847 c-5.439,0-9.845-4.405-9.845-9.847c0-51.735,42.099-93.831,93.834-93.831c5.435,0,9.844,4.402,9.844,9.844s-4.41,9.844-9.844,9.844 C142.853,130.679,109.59,163.941,109.59,204.828z M460.129,214.781c-2.604,0-4.706-2.106-4.706-4.705 c0-19.552-15.912-35.465-35.47-35.465c-2.594,0-4.704-2.107-4.704-4.708c0-2.6,2.11-4.711,4.704-4.711 c24.745,0.005,44.888,20.14,44.888,44.885C464.841,212.674,462.729,214.781,460.129,214.781z" />
+            </g>
+        </g>
+
+    </svg>
+</ng-template>
+
+<ng-template #bulb_svg>
+    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+    <svg width="26px" height="26px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+        <g id="SVGRepo_iconCarrier">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 1C8.20602 1 6.15147 3.02886 5.1033 5.03734C4.591 6.01899 4.31823 6.98949 4.17245 7.70719C4.09911 8.06826 4.05672 8.3713 4.03245 8.58786C4.01718 8.72417 4 8.86266 4 9C4 11.7224 5.23215 13.3137 6.29447 14.1534C6.82295 14.5712 7.11709 14.999 7.16406 15.3747L7.78873 20.3721C7.97639 21.8734 9.25259 23 10.7656 23H13.2344C14.7474 23 16.0236 21.8734 16.2113 20.3721L16.8359 15.3747C16.8829 14.999 17.177 14.5712 17.7055 14.1534C18.7678 13.3137 20 11.7224 20 9C20 8.86266 19.9828 8.72417 19.9675 8.58786C19.9433 8.3713 19.9009 8.06826 19.8275 7.70719C19.6818 6.98949 19.409 6.01899 18.8967 5.03734C17.8485 3.02886 15.794 1 12 1ZM7.53474 12.5845C6.43811 11.7176 5.86517 10.1925 6.02001 8.81057C6.03864 8.64432 6.07247 8.40049 6.13243 8.10531C6.25324 7.51051 6.47539 6.73101 6.87637 5.96266C7.65476 4.47114 9.10021 3 12 3C14.8998 3 16.3452 4.47114 17.1236 5.96266C17.5246 6.73101 17.7468 7.51051 17.8676 8.10531C17.9275 8.40049 17.9614 8.64432 17.98 8.81057C18.1348 10.1925 17.5619 11.7176 16.4653 12.5845C15.7853 13.1219 14.9955 13.974 14.8514 15.1267L14.6172 17H9.38278L9.14862 15.1267C9.00453 13.974 8.21469 13.1219 7.53474 12.5845ZM9.63278 19L9.77329 20.124C9.83584 20.6245 10.2612 21 10.7656 21H13.2344C13.7388 21 14.1642 20.6245 14.2267 20.124L14.3672 19H9.63278Z"
+                fill="#5e51b5" />
+        </g>
+
+    </svg>
+</ng-template>

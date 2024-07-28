@@ -1,0 +1,66 @@
+{
+  "name": "angular-openlayers",
+  "version": "1.0.0",
+  "description": "Example of using Angular and OpenLayers",
+  "private": true,
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pzaenger/angular-openlayers.git"
+  },
+  "author": "Philipp Zängerling <dev@pzaenger.com> (https://www.pzaenger.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pzaenger/angular-openlayers/issues"
+  },
+  "keywords": [
+    "angular",
+    "angular-material",
+    "docker",
+    "openlayers",
+    "pm2"
+  ],
+  "homepage": "https://github.com/pzaenger/angular-openlayers#readme",
+  "dependencies": {
+    "@angular/animations": "^14.1.0",
+    "@angular/cdk": "^14.1.3",
+    "@angular/common": "^14.1.0",
+    "@angular/compiler": "^14.1.0",
+    "@angular/core": "^14.1.0",
+    "@angular/forms": "^14.1.0",
+    "@angular/material": "^14.1.3",
+    "@angular/platform-browser": "^14.1.0",
+    "@angular/platform-browser-dynamic": "^14.1.0",
+    "@angular/router": "^14.1.0",
+    "@canvasjs/charts": "^3.8.12",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "chart.js": "^4.4.3",
+    "ng-apexcharts": "^1.10.0",
+    "ng2-charts": "^6.0.1",
+    "ol": "^7.0.0",
+    "rxjs": "~7.5.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^14.1.3",
+    "@angular/cli": "~14.1.3",
+    "@angular/compiler-cli": "^14.1.0",
+    "@types/geojson": "^7946.0.10",
+    "@types/jasmine": "~4.0.0",
+    "jasmine-core": "~4.2.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.0.0",
+    "typescript": "~4.7.2"
+  }
+}

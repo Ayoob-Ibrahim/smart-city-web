@@ -1,0 +1,51 @@
+ .parking-card-container {
+   color: rgba(0, 0, 0, 0.492);
+
+   .bi {
+     font-size: 25px;
+     color: #5e51b5;
+   }
+
+   h3,
+   h6 {
+     margin-bottom: 0;
+   }
+
+
+
+   .light-title {
+     font-size: 11px;
+     font-weight: 500;
+     margin-left: 4px;
+   }
+
+   small {
+     font-size: 10px;
+     font-weight: 500;
+   }
+
+
+   small {
+     font-size: 10px;
+     font-weight: 500;
+     margin-left: 0;
+   }
+
+   h6 {
+     margin-bottom: -14% !important;
+     margin-left: 1px;
+     font-weight: 500;
+   }
+
+   ol {
+     font-size: 13px;
+     font-weight: 500;
+     margin-bottom: 2.5%;
+
+     span {
+       padding-right: 10%;
+       width: 30px;
+       font-weight: 500;
+     }
+   }
+ }

@@ -1,0 +1,50 @@
+h1 {
+    padding: 0 1rem;
+}
+
+h2 {padding: 1rem;}
+
+mat-toolbar{
+    position:fixed;
+    top:0;
+    z-index: 2;
+}
+// mat-drawer-container{
+//     height: 100%;
+// }
+// :root{
+//     --mdc-fab-container-color: #673ab7;
+//     --mdc-fab-icon-color: #fafcff;
+//     --mat-mdc-fab-color: #fafcff;
+// }
+mat-sidenav-container {
+    height:100%;
+}
+
+// Move the content down so that it won't be hidden by the toolbar
+mat-sidenav {
+    padding-top: 3.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 12px;
+    @media screen and (min-width: 600px) {
+      padding-top: 4rem;
+    }
+
+    .entry{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding:0.75rem;
+    }
+  }
+
+// Move the content down so that it won't be hidden by the toolbar
+mat-sidenav-content{
+    padding-top: 2rem;
+    @media screen and (min-width: 600px) {
+        padding-top: 4rem;
+    }
+}
+
+.expanded {
+    width: 180px;   
+}

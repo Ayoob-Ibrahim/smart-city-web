@@ -1,0 +1,23 @@
+<div class="parking-card-container">
+  <div class="row">
+    <i class="col-2 bi bi-p-square "></i>
+    <div class="col-6">
+      <h3>12</h3>
+      <p class="light-title">Parking Spot</p>
+    </div>
+    <div class="col-4">
+      <div>
+        <h6 class="d-block small mb-0">150</h6>
+        <small class="d-inline ms-1">This weeks</small>
+      </div>
+    </div>
+    <ul>
+      <ng-container *ngFor="let park of parkingData.parkingOther;let last=last">
+        <ol [ngStyle]="!last && {'border-bottom': '2px solid rgba(128, 128, 128, 0.44)'}">
+          <span>{{park.value}}</span>
+          {{park.label}}
+        </ol>
+      </ng-container>
+    </ul>
+  </div>
+</div>

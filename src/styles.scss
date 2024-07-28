@@ -1,0 +1,130 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'node_modules/bootstrap/scss/bootstrap'; 
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+:root{
+    --scw-primary:#3f51b5;
+}
+.scw-primary-color{
+    color:var(--scw-primary);
+}
+.scw-primary-bg{
+    background-color:var(--scw-primary);
+}
+.toolbar{
+    height: 9%;
+}
+.body-content{
+    height: 91%;
+}
+.scw-flex{
+    display: flex;
+}
+.scw-f-dir-row{
+    flex-direction: row;
+}
+.scw-f-dir-col{
+    flex-direction: column;
+}
+.scw-f-jus-bet{
+    justify-content:space-between;
+}
+.scw-f-jus-cen{
+    justify-content: center;
+}
+.scw-f-jus-aro{
+    justify-content: space-around;
+}
+.scw-f-align-cen{
+    align-items: center;
+}
+.scw-f-align-aro{
+    align-items:end;
+}
+.scw-f-align-bet{
+    align-items: start;
+}
+.scw-f-nowrap{
+    flex-wrap: nowrap;
+}
+.scw-f-wrap{
+    flex-wrap: wrap;
+}
+
+.scw-fullsize{
+    height: 100%;
+    width: 100%;
+}
+.scw-full-h{
+    height: 100%;
+
+}
+.scw-h95{
+    height: 95%;
+
+}
+.scw-full-w{
+    width: 100%;
+}
+.scw-fullscreen{
+    height: 100vh;
+}
+.scw-w10{
+    width: 10%;
+}
+.scw-w20{
+    width: 20%;
+}
+.scw-w25{
+    width: 25%;
+}
+.scw-w30{
+    width: 30%;
+}
+.scw-w35{
+    width: 35%;
+}
+.scw-w40{
+    width: 40%;
+}
+.scw-w50{
+    width: 50%;
+}
+.scw-w60{
+    width: 60%;
+}
+.scw-w65{
+    width: 65%; 
+}
+.scw-w70{
+    width: 70%;
+}
+.scw-w75{
+    width: 75%;
+}
+.scw-w80{
+    width: 80%;
+}
+.scw-img-s{
+    height: 40px;
+    // width: 40px;
+}
+.scw-icon-m{
+font-size: 1.5rem;
+
+}
+.scw-icon-l{
+font-size: 3rem;
+
+}
+.scw-icon-s{
+font-size: 1rem;
+
+}
+.scw-scroll-auto{
+    overflow: auto;
+}
+.scw-pointer{
+    cursor: pointer;
+}

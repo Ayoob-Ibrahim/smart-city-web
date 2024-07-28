@@ -1,0 +1,156 @@
+<div class="container-fluid pt-2" style="display: flex;justify-content: space-between;">
+  <div>
+    <div class="side-content">
+
+    </div>
+  </div>
+  <div>
+    <div class="wrapper  " style="display: flex;justify-content: space-around;">
+      <div class="square">
+        <div class="top-cards">
+          <ng-container *ngTemplateOutlet="top_cards"></ng-container>
+        </div>
+        <div class="center-cards">
+          <ng-container *ngTemplateOutlet="center_cards"></ng-container>
+        </div>
+        <div class="bottom-cards">
+          <ng-container *ngTemplateOutlet="bottom_cards"></ng-container>
+        </div>
+      </div>
+      <div class="inverse-rectangle">
+        <ng-container *ngTemplateOutlet="inverse_rect"></ng-container>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<ng-template #center_cards>
+  <div class="row">
+    <div class="col-6">
+      <div class="card">
+        <div class="card-body">
+          <ng-container *ngTemplateOutlet="energy_saving_card"></ng-container>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="card">
+        <div class="card-body">
+          <ng-container *ngTemplateOutlet="map_card"></ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #map_card>
+  <app-map-view></app-map-view>
+</ng-template>
+
+<ng-template #top_cards>
+  <div class="row">
+    <div class="col-6  ">
+      <div class="card">
+        <div class="card-body">
+          <ng-container *ngTemplateOutlet="card_street_light_data"></ng-container>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="card">
+        <div class="card-body">
+          <ng-container *ngTemplateOutlet="card_dust_bin"></ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #card_street_light_data>
+  <app-street-lights></app-street-lights>
+</ng-template>
+
+<ng-template #card_dust_bin>
+  <app-bin></app-bin>
+</ng-template>
+
+<ng-template #inverse_rect>
+  <div class="invers-parent">
+    <div class="row">
+      <div class="card">
+        <div class="card-body">
+          <ng-container *ngTemplateOutlet="inv_rect_bt_parking_spot"></ng-container>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card card-second">
+        <div class="card-body card-bottom-un">
+          <ng-container *ngTemplateOutlet="inv_rect_bt_pie_chart"></ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+
+
+<ng-template #bottom_cards>
+  <div class="bottom-card-parent">
+    <div class="row">
+      <div class="card col-7">
+        <div class="card-body">
+          <ng-container *ngTemplateOutlet="environmental_cards"></ng-container>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="row bottom-inner-two-cards">
+          <div class="card col-12">
+            <div class="card-body">
+              <ng-container *ngTemplateOutlet="cctv_cards"></ng-container>
+            </div>
+          </div>
+          <div class="card col-12">
+            <div class="card-body">
+              <ng-container *ngTemplateOutlet="wifi_cards"></ng-container>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</ng-template>
+
+
+<ng-template #environmental_cards>
+  <app-environmental-data></app-environmental-data>
+</ng-template>
+
+<ng-template #cctv_cards>
+  <app-cctv></app-cctv>
+</ng-template>
+
+<ng-template #wifi_cards>
+  <app-wifi></app-wifi>
+</ng-template>
+
+<ng-template #inv_rect_bt_pie_chart>
+  <div class="chart-container">
+    <div class="header--">
+      <i class="bi bi-p-square "></i>
+      <h6 class="d-inline ms-4 mt-2">Parking Occupancy</h6>
+    </div>
+    <app-chart-view> </app-chart-view>
+  </div>
+</ng-template>
+
+<ng-template #inv_rect_bt_parking_spot>
+  <app-parking-area></app-parking-area>
+</ng-template>
+
+<ng-template #energy_saving_card>
+  <app-energy-consumption></app-energy-consumption>
+</ng-template>

@@ -1,0 +1,28 @@
+<ng-container *ngIf="wifiData.iscard;else wifiDetails">
+    <div class="wifi-container">
+        <div class="row">
+            <div class="col-2">
+                <i class="bi bi-wifi"></i>
+            </div>
+            <div class="col-5">
+                <h5>102</h5>
+                <p class="light-title">Wifi hotspots</p>
+            </div>
+            <div class="col-5">
+                <div>
+                    <h6 class="d-block small mb-0">89</h6>
+                    <small class="d-inline ms-1">Active hotspots</small>
+                </div>
+                <div>
+                    <h6 class="d-block small ">2232</h6>
+                    <small class="d-inline ms-1">Connected devices</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>
+<ng-template #wifiDetails>
+    full details
+</ng-template>
+
+ 
